@@ -50,3 +50,11 @@ const request = {
 if (request.status == ApprovalStatus.submitted) {
     console.log('You have a request to approve please check your email!')
 }
+
+// convert JSON file to array of object to use it
+
+const json = '{ "result": true, "count": 42}';
+const obj = JSON.parse(json);
+
+console.log(obj.result);
+console.log(obj.count);
